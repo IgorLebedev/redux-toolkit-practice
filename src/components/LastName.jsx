@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 import { useSelector } from 'react-redux';
 
-const LastName = () => {
+export default () => {
     const lastName = useSelector(state => state.user.lastName);
     return <div className='font-bold'>{lastName}</div>
-}
-
-export default LastName
+};

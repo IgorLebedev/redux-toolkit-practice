@@ -1,11 +1,11 @@
-import React from 'react'
-import Form from './components/Form'
-import TodoItem from './components/TodoItem'
-import User from './components/User'
-import Posts from './components/Posts'
-import { useSelector } from 'react-redux'
+import React from 'react';
+import Form from './components/Form';
+import TodoItem from './components/TodoItem';
+import User from './components/User';
+import Posts from './components/Posts';
+import { useSelector } from 'react-redux';
 
-function App() {    
+function App() {   
     const { todoItems } = useSelector((state) => state.todo);
     return (
         <div className='min-h-screen h-full w-screen bg-indigo-400'>
